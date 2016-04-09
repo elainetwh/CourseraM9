@@ -1,17 +1,17 @@
 shinyUI(
 
   pageWithSidebar(
-    headerPanel("Motor Trend Car Road Tests"),
+    headerPanel("Motor Trend Car Road"),
     sidebarPanel(
-      selectInput(inputId='var1', label='Variable 1', choices=colnames(mtcars), selected="mpg"),
-      selectInput(inputId='var2', label='Variable 2', choices=colnames(mtcars), selected="mpg"),
+      selectInput(inputId='var1', label='Parameter1', choices=colnames(mtcars), selected="mpg"),
+      selectInput(inputId='var2', label='Parameter2', choices=colnames(mtcars), selected="mpg"),
       actionButton('submitButton', 'Submit')
     ),
     
     mainPanel(
       
       
-      h3('Variable Description'),
+      h3('Parameter Description'),
       textOutput('var1Desc'),
       textOutput('var2Desc'),
       br(),
@@ -22,7 +22,7 @@ shinyUI(
                   plotOutput('plot2', height="300px")
       ),
       
-      h3('Relationship between variables'),
+      h3('Relationship between Parameters'),
       plotOutput('lmPlot')
     )
   )

@@ -10,8 +10,8 @@ names(description)[1] <- "var"
 shinyServer(
   
   function(input, output) {
-    output$plot1 <- renderPlot({hist(data[,input$var1], main="Variable 1", xlab=input$var1, ylab="count")})
-    output$plot2 <- renderPlot({hist(data[,input$var2], main="Variable 2", xlab=input$var2, ylab="count")})
+    output$plot1 <- renderPlot({hist(data[,input$var1], main="Parameter1", xlab=input$var1, ylab="count")})
+    output$plot2 <- renderPlot({hist(data[,input$var2], main="Parameter2", xlab=input$var2, ylab="count")})
     output$var1Desc <- renderText({paste(input$var1, ":" , description[description$var == input$var1, "desc"])})
     output$var2Desc <- renderText({paste(input$var2, ":" , description[description$var == input$var2, "desc"])})
     
