@@ -7,7 +7,7 @@ Background
 ========================================================
 ## Motor Trend Car Road Tests
 
-1. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+1. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
 
 2. The data consists of 32 observations on 11 parameters.
 
@@ -31,7 +31,7 @@ Data Distribution
 2. The data distribution of the selected parameters will be shown in the second section of the main panel (This is a reactive action).
 
 ```{r fig.width=7,fig.height=4}
-hist(mtcars[,"mpg"], main="Variable 1", xlab="mpg", ylab="count")
+hist(mtcars[,"mpg"], main="Parameter 1", xlab="mpg", ylab="count")
 ```
 
 Relationship between parameters
@@ -53,3 +53,16 @@ This application gives the following information of Motor Trend Car Road Dataset
 - Description of the parameters
 - Distribution of the values for each parameter
 - Relationship between two parameters
+
+- SourceCode: 
+  https://github.com/elainetwh/CourseraM9
+  http://rpubs.com/elaine_twh/169598
+              
+- ShinyApp: https://elaine-twh.shinyapps.io/CourseraM9/
+- Presentation: 
+  http://rpubs.com/elaine_twh/169600
+  https://github.com/elainetwh/CourseraM9/blob/master/M9_Introduction.Rpres
+
+
+
+
