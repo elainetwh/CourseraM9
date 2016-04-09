@@ -1,0 +1,55 @@
+Introduction to Motor Trend Car Road Tests Dataset
+========================================================
+Prepared by :
+ELAINE 01April2016
+
+Background
+========================================================
+## Motor Trend Car Road Tests
+
+1. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+2. The data consists of 32 observations on 11 variables.
+
+3. This application helps for understanding the dataset by exploring each variable in the dataset.
+
+Variables Description
+========================================================
+
+1. An user selects the variables that provided in the side bar.
+2. The description of the selected variables will be shown in the first section of the main panel (This is a reactive action).
+3. The variables of the dataset are as follows.
+
+```{r}
+names(mtcars)
+```
+
+Data Distribution
+========================================================
+
+1. An user selects the variables that provided in the side bar.
+2. The data distribution of the selected variables will be shown in the second section of the main panel (This is a reactive action).
+
+```{r fig.width=7,fig.height=4}
+hist(mtcars[,"mpg"], main="Variable 1", xlab="mpg", ylab="count")
+```
+
+Relationship between variables
+========================================================
+
+1. An user selects two variables in the side bar.
+2. An user clicks the *Submit* button.
+3. The relationship of the two selected variables will be shown in the last section of the main panel.
+
+```{r echo=FALSE,fig.width=8,fig.height=4.5}
+plot(mtcars[,"mpg"] ~ mtcars[,"disp"], main=paste("mpg vs disp"), xlab="disp", ylab="mpg")
+```
+
+Summary
+========================================================
+
+This application gives the following information of Motor Trend Car Road Tests Dataset (mtcars):
+
+- Description of the variables
+- Distribution of the values for each variable
+- Relationship between two variables
